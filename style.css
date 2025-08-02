@@ -1,0 +1,96 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(180, 53%, 61%);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main container */
+.quiz-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: 3px solid #ccc;
+}
+
+/* Headings */
+h1, h2 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  color: #333;
+  text-shadow: 1px 1px 5px;
+}
+
+/* Input and Button styling */
+input, button {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  margin: 8px auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(136, 243, 243);
+}
+
+/* Links */
+a {
+  color: rgb(33, 101, 101);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Quiz options */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #d9b3ff;
+}
+
+/* Result styling */
+#result {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#question{
+  font-weight: bold;
+  font-size: 1.2em;
+
+}
+#options{
+   font-weight: bold;
+  font-size: 1.2em;
+}

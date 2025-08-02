@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="quiz-container">
+
+    <!-- Login Screen -->
+    <div id="login-screen">
+      <h2>Login</h2>
+      <input type="text" id="login-username" placeholder="Username"/><br><br>
+      <input type="password" id="login-password" placeholder="Password"/><br><br>
+      <button onclick="loginUser()">Login</button><br><br>
+      <p>
+        Don't have an account? <a href="#" onclick="showScreen('signup-screen')">Sign Up</a><br>
+        <a href="#" onclick="showScreen('forgot-screen')">Forgot Password?</a>
+      </p>
+    </div>
+
+    <!-- Sign Up Screen -->
+    <div id="signup-screen" style="display: none;">
+      <h2>Sign Up</h2>
+      <input type="text" id="signup-username" placeholder="Username"/><br><br>
+      <input type="password" id="signup-password" placeholder="Password"/><br><br>
+      <button onclick="signupUser()">Sign Up</button><br><br>
+      <p>
+        Already have an account? <a href="#" onclick="showScreen('login-screen')">Login</a>
+      </p>
+    </div>
+
+    <!-- Forgot Password Screen -->
+    <div id="forgot-screen" style="display: none;">
+      <h2>Forgot Password</h2>
+      <input type="text" id="forgot-username" placeholder="Enter your username"/><br><br>
+      <button onclick="resetPassword()">Show Password</button><br><br>
+      <p>
+        Remembered your password? <a href="#" onclick="showScreen('login-screen')">Login</a>
+      </p>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" style="display: none;">
+      <h1>Welcome to the ultimate Quiz Challenge! 🧠</h1>
+      <div id="question">Loading...</div>
+      <ul id="options"></ul>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
